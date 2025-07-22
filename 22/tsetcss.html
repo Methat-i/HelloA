@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box {
+
+            background-color: lightblue;
+            color: navy;
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        .button1 {padding: 10px 20px;
+        background-color: aliceblue;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+        .button1:hover {
+            background-color: rgb(233, 0, 0);
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            background-color: aliceblue;
+        }
+
+        .center-container>.center-box{padding: 20px;
+        background-color: red;
+        border: black;}
+
+        .grid-center {
+            display: grid;
+            place-items: center;
+            height: 100vh; /* Full viewport height */
+            background-color: aliceblue;
+        }
+
+        .grid-center>.center-box {
+            padding: 20px;
+            background-color: green;
+            border: black;
+        }
+
+        .container-center{
+            position: relative;
+             height: 100vh;
+            background-color: aqua;
+        }
+
+        .absolute-item {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: tomato;
+            padding: 20px;
+            transform: translate();
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container-center">
+        <div class="absolute-item">ABS</div>
+    </div>
+
+    <div class="center-container"><div class="center-box">flex center</div></div>
+
+<div class="grid-center"><div class="center-box">Grid center</div></div>
+
+
+<button class="button1">click</button>
+
+
+<p style="color: red; font-size: 20px;">ทดสอบการเขียนภาษาไทย</p><div class="box">
+    Box
+</div>
+
+<div class="row">
+    <div class="box2 red">red</div>
+    <div class="box2 green">green</div>
+       <div class="box2 blue">blue</div>
+</div>
+
+
+
+</body>
+</html>

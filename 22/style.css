@@ -17,6 +17,8 @@
 .blue{
     background-color: blue;
 }
+
+
 .round-button {
 display: inline-block;
 padding: 10px 20px;
@@ -25,4 +27,105 @@ color: white;
 background-color: #007BFF;
 border: none;
 border-radius: 25px;
+text-align: center;
+cursor: pointer;
 }
+
+.round-button:hover {
+    background-color: #b30000;  /* Darker shade on hover */
+}
+
+    @media (max-width: 600px) {
+      .round-button {
+        background-color: #007BFF; /* เปลี่ยนสีเป็นเขียว */
+        border-radius: 0px;         /* เอาขอบโค้งมนออก */
+        font-size: 18px;
+      }
+    }
+
+.container > p {
+  color: red;
+}
+
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.left { grid-area: left; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
+.grid-container {
+display: grid;
+grid-template-areas:
+'header header header header header header'
+'menu main main main main main'
+'menu left left left right right' 
+'footer footer footer footer footer footer'; 
+gap: 10px;
+background-color: red;
+padding: 10px;
+}
+.grid-container > div {
+background-color: #f0f0f0;
+text-align: center;
+padding: 20px 0;
+font-size: 30px;
+}
+
+.table1 {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+}
+.table1-item {
+background-color: white;
+border: 1px solid #000000;
+padding: 20px;
+font-size: 30px;
+text-align: center;
+}
+.flex1 {
+display: flex;
+background-color: DodgerBlue;
+flex-direction: row-reverse;
+
+.item{
+    background-color: #ff0000;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+}
+}
+
+.flex2 {
+    border: #f0f0f0 1px solid;
+display: flex;
+
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+background-color: DodgerBlue;
+width: 650px;
+flex: 5cap;
+.item{
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+        width: 100px; /* กำหนดขนาดแน่นอน */
+    box-sizing: border-box;
+}
+}
+
+.flex3 {
+  display: flex;
+  height: 600px;
+  justify-content: center;  
+  align-items: center;      
+  background-color: DodgerBlue;
+}
+
+.item1 {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  width: 300px;         
+  height: 300px;          
+  box-sizing: border-box;
+}
+

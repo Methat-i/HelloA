@@ -7,7 +7,7 @@
 
 # 📚 Web Technology 960241 - Lab Repository
 
-👨‍🎓 **Student Name**:Methat
+👨‍🎓 **Student Name**:Methat.
 📘 **Course**: 960241 - Web Technology (Lec.001)  
 👨‍🏫 **Instructor**: Aj. Piyavach K.  
 🗓️ **Year**: 2025  

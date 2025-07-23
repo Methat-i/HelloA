@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 # 📚 Web Technology 960241 - Lab Repository
 
 👨‍🎓 **Student Name**:Methat
@@ -8,8 +15,9 @@
 ---
 
 ## 📌 Course Description
-'
-This course is about learning web technologies, from the basics of creating web pages (HTML, CSS), user-side programming (JavaScript), server-side web development (NodeJS), using GitHub to deploying websites (Deployment).'
+
+This course is about learning web technologies, from the basics of creating web pages (HTML, CSS), user-side programming (JavaScript), server-side web development (NodeJS), using GitHub to deploying websites (Deployment).
+
 ---
 
 ## 🚀 Basic usage instructions
@@ -17,4 +25,15 @@ This course is about learning web technologies, from the basics of creating web 
 ```bash
 # Clone repo
 git clone https://github.com/Methat-i/HelloA.git
+```
+
+---
+
+
+
+
+
+
+
+
 

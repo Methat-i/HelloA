@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3</title>
+
+     <style>
+
+        @keyframes blink {
+            0%, 100% { opacity: 1;
+             }
+            50% { opacity: 0; }
+
+        }
+        .blink {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes spin {
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+             }
+   
+
+        .rorate-box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: spin 2s linear infinite;
+
+            left: 0;
+            top: 0;
+        }
+
+        @keyframes move-right {
+            0%{left: 0px;}
+            100%{left: calc(100% - 100px);}
+             
+        }
+        .move-box {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            animation: move-right 2s ease-out infinite alternate;
+
+            
+        }
+
+        .container_move-box {
+
+
+            height: 100%;
+            background-color: rgb(84, 110, 84);
+            position: relative;
+            margin-bottom: 20%;
+        }
+
+        @keyframes color-change {
+            0% { background-color: red; }
+            33% { background-color: blue; }
+            66% { background-color: green; }
+            100% { background-color: red; }
+        }
+
+        .color-box {
+            width: 100px;
+            height: 100px;
+            animation: color-change 3s infinite;
+        }
+     </style>
+</head>
+<body>
+
+
+<div class="blink"></div> 
+<div class="rorate-box"></div>
+<div class="container_move-box"><div class="move-box"></div></div>
+<div class="color-box"></div>
+
+</body>
+</html>

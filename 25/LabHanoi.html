@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab Hanoi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function Hanoi(n, from, aux, to) {
+      if (n === 0) return;
+
+      // ย้าย n-1 ชั้นจาก from ไป aux ผ่าน to
+      Hanoi(n - 1, from, to, aux);
+
+      // บอกว่ากำลังย้าย "ชั้นที่ n" จาก from ไป to
+      console.log(`ย้ายชั้นที่ ${n} จาก ${from} ไป ${to}`);
+
+      // ย้าย n-1 ชั้นจาก aux ไป to ผ่าน from
+      Hanoi(n - 1, aux, from, to);
+    }
+
+    window.onload = function () {
+      console.log("เริ่มต้นย้ายฮานอย 3 ชั้น จาก A ไป C");
+      Hanoi(3, 'A', 'B', 'C');
+    };
+  </script>
+</head>
+<body>
+</body>
+</html>

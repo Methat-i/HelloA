@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Status Example</title>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let text = fruits.join(" and ");
+        console.log(text); // Outputs: Banana and Orange and Apple and Mango
+
+        const numbers = [1, 2, 3, 4, 5];
+        let sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        console.log(sum); // Outputs: 15
+
+        const a =['a', 'b', 'c'];
+        a.push('d');
+        console.log(a); // Outputs: ['a', 'b', 'c', 'd']
+
+
+        const b = ['e', 'f', 'g'];
+        b.unshift('d'); 
+        console.log(b); // Outputs: ['d', 'e', 'f', 'g']
+
+        const c = ['h', 'i', 'j'];
+        console.log(a.push(...c)); // Outputs: 7 (new length of array a)
+
+        const d = ['k', 'l', 'm'];
+        console.log(b.unshift(...d)); // Outputs: 10 (new length of array b)
+
+        const e = ['n', 'o', 'p'];
+        console.log(a.concat(e)); // Outputs: ['a', 'b', 'c', 'd', 'n', 'o', 'p']
+
+        
+        
+
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>

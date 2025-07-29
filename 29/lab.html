@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Status Example</title>
+    <script>
+        const student = {
+            name: "Methat",
+            age: 20,
+            grade: "A"
+        }
+
+        
+        const {name, age, grade} = student;
+        console.log(name,age,grade); 
+
+        function sayHello(name='Guest') {
+            console.log(`Hello, my name is ${name}.`);
+        }
+        sayHello(null); 
+
+        const word = ["JavaScript", "is", "fun"];
+        word.join(',')
+
+        const arr1 = [1, 2, 3];
+        const arr2 = [4, 5, 6];
+
+        arr1.concat(arr2);
+
+        let fruits = [ "Apple","Banana" ];
+        fruits.push("Mango");
+        fruits.pop();
+        fruits.unshift("Orange");
+        fruits.shift();
+        
+        let color = ["Red", "Green", "Blue", "Yellow"];
+        // color.pop();
+        // color.pop();
+        // color.pop();
+        // color.push("Yellow");
+        //  color.push("Purple");
+
+        //  for (let i = 0; i < color.length; i++) {
+        //      if (color[i] === "Green") {
+        //         delete color[i];
+        //      }  
+        // }
+
+        // delete color[1];
+        // console.log(color);
+
+        color.splice(1, 2,'purple'); 
+
+        console.log(color); 
+
+        let numbers = [1, 2, 3, 4, 5];
+        numbers.splice(2,5);
+
+        let numbers2 = [10, 20, 30, 40, 50];
+
+        numbers2.indexOf(30); // Outputs: 2
+        numbers2.find((i) => i > 25); // Outputs: 40
+        numbers2.findIndex((i) => i > 25); // Outputs: 2
+
+        const pirces = [100, 200, 300];
+        pirces.map((p) => p * 1.07); // Outputs: [200, 400, 600]
+
+        const scores = [10, 20, 30, 40, 50,60,70, 80, 90, 100];
+        scores.filter((s) => s >= 50); 
+        // Outputs: [50, 60, 70, 80, 90, 100]
+
+        const cart = [100, 200, 50, 150];
+
+        cart.reduce((prev, curr) => prev + curr, 0);
+        // Outputs: 500
+
+
+
+        const num = [1, 2, 3, 4, 5,100];
+        num.sort[(a, b) => a - b]; // Outputs: [1, 2, 3, 4, 5
+        num.sort((a, b) => b - a); // Outputs: [5, 4, 3, 2, 1]
+        console.log(num); 
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>

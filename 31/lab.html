@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab</title>
+<script>
+
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        Person.prototype.greet = () => {
+            console.log("Hello"+ this.name);
+        };
+
+        const person1 = new Person("Jimmy", 30)
+
+        // if (person1.name === "I c e") {
+        //     console.log("Hello"+ this.name);
+        // }
+        person1.greet();
+
+
+        console.log(person1.hasOwnProperty("name")); // false
+
+        console.log("greet" in person1); // true
+    
+        function Animal(name) {
+            this.name = name;
+        }
+
+        Animal.prototype.speak = function() {
+            console.log(this.name + " ba ba ba .");
+        };
+
+  const animal1 = new Animal("Dog");
+        animal1.speak(); // แก้ไขตรงนี้จาก a1 เป็น animal1
+
+        function Dog(name) {
+            Animal.call(this, name);
+        }
+
+        Dog.prototype = Object.create(Animal.prototype);
+        Dog.prototype.constructor = Dog;
+
+
+        Dog.prototype.bark  = function() {
+            console.log(this.name + " Bug Bug!");
+        };
+
+        d1 = new Dog("Dog");
+        d1.speak(); 
+        d1.bark(); 
+
+        console.log(d1.__proto__ === Dog.prototype);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

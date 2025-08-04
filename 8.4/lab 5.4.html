@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <script>
+    function appendValue(value) {
+  const display = document.getElementById("display");
+  display.value += value;
+}
+
+function clearDisplay() {
+  document.getElementById("display").value = "";
+}
+
+function calculateResult() {
+  const display = document.getElementById("display");
+  try {
+    display.value = eval(display.value);
+  } catch {
+    display.value = "Error";
+  }
+}
+  </script>
+  <style>
+    body {
+      /* background-color: #1a1a1a; */
+      background-color: black;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+    }
+    .calculator {
+      display: grid;
+      grid-template-columns: repeat(4, 80px);
+      grid-gap: 5px;
+    }
+    .calculator input {
+      grid-column: span 3;
+      height: 50px;
+      font-size: 1.5rem;
+      text-align: right;
+      padding-right: 10px;
+    }
+    .calculator button {
+      height: 50px;
+      font-size: 1.5rem;
+      /* background-color: green; */
+      background-color: rgb(255, 255, 7);
+      color: rgb(0, 0, 0);
+      border: none;
+      cursor: pointer;
+    }
+    .calculator button:hover {
+      /* background-color: darkgreen; */
+      /* background-color: rgb(215, 215, 0); */
+            background-color: #000000;
+
+
+      color: #ffee00;
+      border: 1px solid #ffee00;
+      height: 50px;
+    }
+
+    .navigation {
+      margin: 20px;
+      height: 50px;
+      width: 100px;
+      text-align: top;
+      background-color: aliceblue;
+    }
+    .nav-button {
+      width: 100%;
+      height: 100%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      background-color: #000000;
+
+
+      color: #ffee00;
+      border: 1px solid #ffee00;
+    }
+
+    .nav-button:hover {
+      background-color: #ffee00;
+      color: #000000;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" disabled />
+    <button onclick="clearDisplay()">c</button>
+
+    <button onclick="appendValue('1')">1</button>
+    <button onclick="appendValue('2')">2</button>
+    <button onclick="appendValue('3')">3</button>
+    <button onclick="appendValue('/')">/</button>
+
+    <button onclick="appendValue('4')">4</button>
+    <button onclick="appendValue('5')">5</button>
+    <button onclick="appendValue('6')">6</button>
+    <button onclick="appendValue('*')">*</button>
+
+    <button onclick="appendValue('7')">7</button>
+    <button onclick="appendValue('8')">8</button>
+    <button onclick="appendValue('9')">9</button>
+    <button onclick="appendValue('-')">-</button>
+
+    <button onclick="appendValue('0')">0</button>
+    <button onclick="appendValue('.')">.</button>
+    <button onclick="calculateResult()">=</button>
+    <button onclick="appendValue('+')">+</button>
+
+
+
+  </div>
+
+      <div class="navigation">
+    <button class="nav-button" onclick="goToOtherPage()">lab</button>
+  </div>
+
+<script>
+    function goToOtherPage() {
+      
+     window.location.href = "labpage.html";
+    }
+  </script>
+
+
+  <script src="calculator.js"></script>
+</body>
+</html>

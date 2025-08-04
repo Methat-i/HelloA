@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <script>
+        let lastExpression = ""; // สำหรับ undo
+
+        function appendValue(value) {
+        const display = document.getElementById("display");
+        display.value += value;
+        }
+
+        function clearDisplay() {
+        document.getElementById("display").value = "";
+        }
+
+        function calculateResult() {
+        const display = document.getElementById("display");
+        try {
+            lastExpression = display.value; // เก็บก่อนคำนวณ
+            display.value = eval(display.value);
+        } catch {
+            display.value = "Error";
+        }
+        }
+
+        // function undo() {
+        // const display = document.getElementById("display");
+        // display.value = lastExpression;
+        // }
+
+        // 🔁 Undo แบบลบทีละตัวอักษร
+function undo() {
+  const display = document.getElementById("display");
+  display.value = display.value.slice(0, -1); // ตัดตัวสุดท้ายออก
+}
+
+  </script>
+  <style>
+    body {
+      /* background-color: #1a1a1a; */
+      background-color: black;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  
+    }
+   
+
+    .navigation {
+      margin: 20px;
+      height: 50px;
+      width: 100px;
+      text-align: top;
+      background-color: aliceblue;
+    }
+    .nav-button {
+      width: 100%;
+      height: 100%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      background-color: #000000;
+
+
+      color: #ffee00;
+      border: 1px solid #ffee00;
+    }
+
+    .nav-button:hover {
+      background-color: #ffee00;
+      color: #000000;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+
+
+  <div class="navigation">
+    <button class="nav-button" onclick="goToOtherPage1()">lab1.1</button>
+  </div>
+
+  <div class="navigation">
+    <button class="nav-button" onclick="goToOtherPage2()">lab1.2</button>
+  </div>
+
+  <div class="navigation">
+    <button class="nav-button" onclick="goToOtherPage3()">lab1.3</button>
+  </div>
+  
+  <div class="navigation">
+    <button class="nav-button" onclick="goToOtherPage4()">lab1.4</button>
+  </div>
+
+    <div class="navigation">
+    <button class="nav-button" onclick="goToOtherPage5()">lab1.5</button>
+  </div>
+<script>
+    function goToOtherPage1() {
+      
+      window.location.href = "lab 5.4.html";
+    }
+
+    function goToOtherPage2() {
+      
+      window.location.href = "page2.html";
+    }
+
+    function goToOtherPage3() {
+      
+      window.location.href = "Addfriend.html";
+    }
+
+        function goToOtherPage4() {
+      
+      window.location.href = "time1.html";
+    }
+
+            function goToOtherPage5() {
+      
+      window.location.href = "buddate.html";
+    }
+  </script>
+
+
+  <script src="calculator.js"></script>
+</body>
+</html>

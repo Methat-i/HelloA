@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "name": "8.8",
+  "version": "1.0.0",
+  "main": "hello.js",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
